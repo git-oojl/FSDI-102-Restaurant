@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Forms</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Forms</h1>
+
+    <div>
+        <p>Personal information:</p>
+        <form action="" method="">
+            <label for="first-name">First Name:</label> <input type="text" id="first-name">
+            <label for="last-name">Last Name:</label> <input type="text" id="last-name">
+            <input type="submit" value="Submit">
+        </form>
+
+        <p>Select your favorite Programming Language:</p>
+        <form action="">
+            <input type="radio" id="java" name="language" value="java"> <label for="java">Java</label>
+            <input type="radio" id="python" name="language" value="python"> <label for="python">Python</label>
+        </form>
+
+        <p>Related elements inside a form</p>
+        <form action="">
+            <fieldset>
+                <legend>Personal information:</legend>
+                <label for="first-name2">First Name:</label> <input type="text" id="first-name2">
+                <label for="last-name2">Last Name:</label> <input type="text" id="last-name2">
+            </fieldset>
+
+            <fieldset>
+                <legend>Vehicles</legend>
+                <label for="cars">Choose a car:</label>
+                <select id="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="audi">Audi</option>
+                    <option value="bmw">BMW</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional information:</legend>
+                <label for="suggestions">Suggestions:</label>
+                <textarea id="suggestions" rows="3" cols="25"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>User Information:</legend>
+                <label for="username">Username:</label> <input type="text" id="username">
+                <label for="password">Password:</label> <input type="password" id="password">
+                <label for="birthday">Birthday:</label> <input type="date" id="birthday">
+                <label for="age">Age:</label> <input type="number" id="age">
+            </fieldset>
+
+            <fieldset>
+                <legend>Input Types:</legend>
+                <label for="text-input">Text:</label> <input type="text" id="text-input">
+                <label for="date-input">Date:</label> <input type="date" id="date-input">
+                <label for="password-input">Password:</label> <input type="password" id="password-input">
+                <label for="number-input">Number:</label> <input type="number" id="number-input">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

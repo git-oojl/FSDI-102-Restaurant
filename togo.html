@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="mystyle.css">
+
+    <title>To Go: Baja Side Cafe</title>
+</head>
+<body>
+    <header>
+        <h1><i class="fa-solid fa-utensils"></i> Baja Side Cafe</h1>
+
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="menu.html"><i class="fa-solid fa-book-open"></i> Menu</a>
+            <a class="active" href="togo.html"><i class="fa-solid fa-bag-shopping"></i> To Go</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="page-heading">
+            <h2><i class="fa-solid fa-bag-shopping"></i> To Go Order</h2>
+            <p>Complete the form below to practice placing an online order.</p>
+        </section>
+
+        <form class="payment-form" action="#" method="post">
+            <fieldset>
+                <legend><i class="fa-solid fa-user"></i> Customer Information</legend>
+
+                <div class="form-grid">
+                    <div class="input-container">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="First name" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last name" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="name@email.com" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><i class="fa-solid fa-bowl-food"></i> Order Details</legend>
+
+                <div class="form-grid">
+                    <div class="input-container">
+                        <label for="dish">Choose a Dish</label>
+                        <select id="dish" name="dish" required>
+                            <option value="">Select one</option>
+                            <option value="burger">Classic Burger - $10.50</option>
+                            <option value="pizza">Pepperoni Pizza - $13.25</option>
+                            <option value="spaghetti">Spaghetti - $11.75</option>
+                            <option value="tacos">Beef Tacos - $9.95</option>
+                            <option value="salad">Crispy Chicken Salad - $12.99</option>
+                        </select>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                    </div>
+
+                    <div class="input-container full-width">
+                        <label for="instructions">Special Instructions</label>
+                        <textarea id="instructions" name="instructions" rows="4" placeholder="Example: no onions"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><i class="fa-solid fa-credit-card"></i> Payment Information</legend>
+
+                <p class="payment-note">Enter a credit or debit card below.</p>
+
+                <div class="form-grid">
+                    <div class="input-container full-width">
+                        <label for="card-name">Name on Card</label>
+                        <input type="text" id="card-name" name="card-name" placeholder="Full name" required>
+                    </div>
+
+                    <div class="input-container full-width">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" name="card-number" inputmode="numeric" placeholder="1111 2222 3333 4444" maxlength="19" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="expiration">Expiration Date</label>
+                        <input type="month" id="expiration" name="expiration" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="cvv">CVV</label>
+                        <input type="password" id="cvv" name="cvv" inputmode="numeric" placeholder="123" maxlength="4" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-buttons">
+                <button type="reset" class="btn secondary-btn"><i class="fa-solid fa-rotate-left"></i> Clear</button>
+                <button type="submit" class="btn"><i class="fa-solid fa-lock"></i> Pay and Place Order</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
